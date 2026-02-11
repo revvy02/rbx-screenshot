@@ -20,6 +20,7 @@ parser:option("--fov"):description("Camera field of view"):convert(tonumber)
 parser:option("-o --output"):description("Copy screenshot to this path")
 parser:option("--settle"):description("Settle time in seconds"):convert(tonumber)
 parser:option("--focus"):description("Luau CFrame expression for camera focus")
+parser:option("--skew"):description("Luau CFrame expression applied to camera each frame")
 
 local args = parser:parse(process.args)
 
@@ -78,6 +79,7 @@ process.exec("rodeo", {
 	tostring(args.fov or ""),
 	tostring(args.settle or ""),
 	args.focus or "",
+	args.skew or "",
 }, { stdio = "forward" })
 
 -- Parse return file
