@@ -13,7 +13,7 @@ rodeo serve
 Take a screenshot:
 
 ```sh
-rbx-screenshot --cframe "CFrame.new(0, 10, 0)" --fov 35 --settle 0.5 --output "screenshot.png"
+rbx-screenshot --cframe "CFrame.new(0, 10, 0)" --fov 35 --focus "CFrame.new(0, 0, 0)" --settle 0.5 --output "screenshot.png"
 ```
 
 ## Options
@@ -22,5 +22,6 @@ rbx-screenshot --cframe "CFrame.new(0, 10, 0)" --fov 35 --settle 0.5 --output "s
 |------|-------------|
 | `--cframe <expr>` | Luau CFrame expression for camera position |
 | `--fov <number>` | Camera field of view |
+| `--focus <expr>` | Luau CFrame expression for camera focus |
 | `--settle <seconds>` | Wait time before capture (for scene stability) |
 | `-o, --output <path>` | Output file path (default: `.rodeo-screenshots/<id>.png`) |
