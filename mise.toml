@@ -1,0 +1,5 @@
+[tools]
+"ubi:lune-org/lune" = "0.10.4"
+"ubi:pesde-pkg/pesde" = "latest"
+"ubi:seaofvoices/darklua" = "latest"
+"ubi:revvy02/rodeo" = "v0.1.0-rc.8"

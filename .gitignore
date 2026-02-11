@@ -1,0 +1,6 @@
+build/
+*_packages/
+.pesde/
+pesde.lock
+.DS_Store
+.rodeo-screenshots

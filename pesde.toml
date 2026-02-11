@@ -1,0 +1,16 @@
+name = "rensselaer_county/rbx_screenshot"
+version = "0.1.0"
+private = true
+
+[engines]
+lune = "^0.10.4"
+pesde = "^0.7.2"
+
+[target]
+environment = "lune"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[dependencies]
+argparse = { name = "caveful_games/argparse", version = "^0.1.2" }
